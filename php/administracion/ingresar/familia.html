@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Familia</title>
+    </head>
+    <script src="../../../js/enlaces.js"></script>
+    <body>
+        
+        <nav>
+            <ul>
+            <li><a href="../../juego.html">JUEGO</a></li>
+                <li><a href="../mariposas.html">MARIPOSAS</a></li>
+                <li><a href="../../index.html">MENU PRINCIPAL</a></li>
+            </ul>
+        </nav>
+        <h1>Registrar Familia</h1>
+       
+        <form >
+                
+        <label>
+                   FAMILIA<input name="id" type="text" autofous required maxlength="13" pattern="[A-Za-z]+">
+                </label><br>
+                 <label>
+                HUEVO<input name="huevo" pattern="[A-Za-z]+" type="text" autofous required maxlength="10">
+                </label><br>
+                 <label>
+                    LARVA<input name="larva" type="text" pattern="[A-Za-z]+" pattern="[A-Za-z]+" maxlength="10" autofous required>
+                </label><br>
+                 <label>
+                    ADULTO<input name="adulto" type="text" pattern="[A-Za-z]+" autofous required maxlength="20" >
+                </label><br>
+                <label>COLOR
+                <input name="color" type="text" pattern="[A-Za-z]+" autofous required maxlength="15">
+                </label><br>
+                <label>CUERPO
+                <input name="cuerpo" type="text" pattern="[A-Za-z]+" autofous required maxlength="15">
+                </label><br>
+                <label>ALAS
+                <input name="alas" type="text" pattern="[A-Za-z]+" autofous required maxlength="15">
+                </label><br>
+                <label>CLASIFICADOR
+                    <select name='combo'>
+                      
+                    </select>
+                </label><br>
+                           
+             <input name='ingresar' type="submit" value="REGISTRAR">
+           
+            </form>
+            <button onclick="familia2();">CANCELAR</button>
+    </body>
+</html>

@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mariposas</title>
+    </head>
+    <script src="../../../js/enlaces.js"></script>
+    <body>
+        
+        <nav>
+            <ul>
+            <li><a href="../../juego.html">JUEGO</a></li>
+                <li><a href="../mariposas.html">MARIPOSAS</a></li>
+                <li><a href="../../index.html">MENU PRINCIPAL</a></li>
+            </ul>
+        </nav>
+        <h1>Registrar Mariposa</h1>
+       
+        <form  >
+                
+        <label>
+                   ESPECIE<input name="id" type="text"  autofous required maxlength="30">
+                </label><br>
+                 <label>
+                   NOMBRE COMUN<input name="nombre"  type="text" autofous required maxlength="50">
+                </label><br>
+                 <label>
+                    LONGITUD DE ALAS<input name="alas" type="number" step="any" min="0" max="4" autofous required>
+                </label><br>
+                 <label>
+                    COLOR<input name="color" type="text"  autofous required maxlength="8" >
+                </label><br>
+                <label>ESTADO
+                    <select name='combo'>
+                        <?php 
+                        echo "<option>EXTINTA</option>
+                        <option>VIVA</option>";
+                        ?>
+                        
+                    </select>
+                </label><br>
+                <label>
+                    AÑO<input name="ano" type="number" autofous required min="1700" max="2021">
+                </label><br>
+                <br>
+                <label>ZONA
+                    <select name='combo2'>
+                        <?php $link=mysqli_connect("localhost","root","root","mariposas");
+                        if (!$link) echo 'NO SE CONECTÓ LA BASE DE DATOS';
+                        $consultar2 = "call c_zonas()";
+                        $query2=mysqli_query ($link,$consultar2);
+                        foreach($query2 as $fila){
+                            echo "<option>", $fila['id_zonas'],"</option>";
+                        }
+                        ?>
+                    </select>
+                </label><br>
+                <label>CLASIFICADOR
+                    <select name='combo3'>
+                        
+                    </select>
+                </label><br>
+                <label>GENERO
+                    <select name='combo4'>
+                       
+                        ?>
+                    </select>
+                </label>
+            
+             <input name='ingresar' type="submit" value="REGISTRAR">
+            
+            </form>
+            <button onclick="mariposas2();">CANCELAR</button>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zonas</title>
+    </head>
+    <script src="../../../js/enlaces.js"></script>
+    <body>
+        
+        <nav>
+            <ul>
+            <li><a href="../../juego.html">JUEGO</a></li>
+                <li><a href="../mariposas.html">MARIPOSAS</a></li>
+                <li><a href="../../index.html">MENU PRINCIPAL</a></li>
+            </ul>
+        </nav>
+        <h1>Registrar Zonas</h1>
+       
+        <form >
+               
+                
+                 <label>
+                    ZONA<input name="zona" type="text" pattern="[A-Za-z]+" autofous required maxlength="10">
+                </label><br>
+                 <label>
+                    CLIMA<input name="clima" type="text" pattern="[A-Za-z]+" autofous required maxlength="10">
+                </label><br>
+                 <label>
+                    TEMPERATURA EN °C<input name="tem" type="number" step="any" min= "0" max="50" autofous required maxlength="2">
+                </label><br>
+                 <label>
+                    FLORA<input name="flo" type="text" pattern="[A-Za-z]+" autofous required maxlength="10" >
+                </label><br>
+                 <label>
+                    OROGRAFÍA<input name="oro" type="text" pattern="[A-Za-z]+" autofous required maxlength="10">
+                </label><br>
+                 <label>
+                    UBICACION<input name="ubicacion" pattern="[A-Za-z]+" type="text" autofous required maxlength="15" >
+                </label><br>
+                       
+      
+            <input name='ingresar' type="submit" value="REGISTRAR">
+           
+            </form>
+            <button onclick="zonas2();">CANCELAR</button>
+    </body>
+</html>

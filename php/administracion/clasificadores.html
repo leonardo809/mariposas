@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clasificadores</title>
+    </head>
+    <script src="../../js/enlaces.js"></script>
+    <body>
+        
+        <nav>
+            <ul>
+            <li><a href="../../juego.html">JUEGO</a></li>
+                <li><a href="../mariposas.html">MARIPOSAS</a></li>
+                <li><a href="../../index.html">MENU PRINCIPAL</a></li>
+            </ul>
+        </nav>
+        <h1>Administrar Clasificadores</h1>
+        <aside>
+            <ul>
+                <li><a href="mariposas.html">MARIPOSAS</a></li>
+                <li><a href="zonas.html">ZONAS</a></li>
+                <li><a href="genero.html">GENERO</a></li>
+                <li><a href="clasificadores.html">CLASIFICADORES</a></li>
+                <li><a href="familia.html">FAMILIA</a></li>
+            <ul>
+        </aside>
+        <form>
+            <input type="text" placeholder="Ingrese lo que quiere buscar" required autofocus name="clasificador" value="" maxlength="10">
+            <select name="combo">
+                <option value="value1" selected>NOMBRE</option>
+                <option value="value2">APELLIDO</option>
+                <option value="value3">NACIONALIDAD</option>
+            </select>
+            <input class="btn__submit" type="submit" value="BUSCAR">
+            
+            <a href="ingresar/clasificadores.html"><img src="../../img/agregar_bd.svg"></a>
+            <br>
+            <br>
+            <br>
+        </form>
+        <table align="center" border="1" id="capa">
+            <thead>
+                <tr>
+                    <th scope="col">NOMBRE</th>
+                    <th scope="col">APELLIDO</th>
+                    <th scope="col">LUGAR DE ORIGEN</th>
+                    <th scope="col">NACIONALIDAD</th>
+                    <th scope="col">FECHA DE NACIMIENTO</th>
+                    <th scope="col">FECHA DE MUERTE</th>
+                </tr>
+            </thead>
+            <tbody align="center" border="1">
+                
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a class="link_edit" href="actualizar/clasificadores.html">Editar</a></td>
+                </tr>
+            </tbody>
+            <br><br><br>
+            <button onclick="clasificador();">REGRESAR</button>
+            
+        </table>       
+    </body>
+</html>

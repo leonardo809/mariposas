@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Familia</title>
+    </head>
+    <script src="../../js/enlaces.js"></script>
+    <body>
+        
+        <nav>
+            <ul>
+            <li><a href="../../juego.html">JUEGO</a></li>
+                <li><a href="../mariposas.html">MARIPOSAS</a></li>
+                <li><a href="../../index.html">MENU PRINCIPAL</a></li>
+            </ul>
+        </nav>
+        <h1>Administrar Familia</h1>
+        <aside>
+            <ul>
+                <li><a href="mariposas.html">MARIPOSAS</a></li>
+                <li><a href="zonas.html">ZONAS</a></li>
+                <li><a href="genero.html">GENERO</a></li>
+                <li><a href="clasificadores.html">CLASIFICADORES</a></li>
+                <li><a href="familia.html">FAMILIA</a></li>
+            <ul>
+        </aside>
+        <form >
+            <input type="text" placeholder="Ingrese lo que quiere buscar" required autofocus name="familia" value="" maxlength="15">
+            <select name="combo">
+                <option value="value1" selected>FAMILIA</option>
+                <option value="value2">COLOR</option>
+            </select>
+            <input class="btn__submit" type="submit" value="BUSCAR">
+            
+            <a href="ingresar/familia.html"><img src="../../img/agregar_bd.svg"></a>
+            <br>
+            <br>
+            <br>
+        </form>
+        <table align="center" border="1" id="capa">
+            <thead>
+                <tr>
+                    <th scope="col">FAMILIA</th>
+                    <th scope="col">CARACTERITICA DEL HUEVO</th>
+                    <th scope="col">CARACTERITICA DE LA LARVA</th>
+                    <th scope="col">CARACTERITICA DEL  ADULTO</th>
+                    <th scope="col">COLOR</th>
+                    <th scope="col">CARACTERITICA DEL CUERPO</th>
+                    <th scope="col">ALAS</th>
+                    <th scope="col">NOMBRE DEL TAXONOMO</th>
+                    <th  scope="col">APELLIDO DEL TAXONOMO</th>
+                </tr>
+            </thead>
+            <tbody align="center" border="1">
+                
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a class="link_edit" href="actualizar/familia.html">Editar</a></td>
+                </tr>
+            </tbody>
+            
+            <br><br><br>
+            <button onclick="familia();">REGRESAR</button>
+            
+        </table>       
+    </body>
+</html>

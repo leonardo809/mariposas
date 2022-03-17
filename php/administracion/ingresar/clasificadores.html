@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clasificadores</title>
+    </head>
+    <script src="../../../js/enlaces.js"></script>
+    <body>
+        
+        <nav>
+            <ul>
+            <li><a href="../../juego.html">JUEGO</a></li>
+                <li><a href="../mariposas.html">MARIPOSAS</a></li>
+                <li><a href="../../index.html">MENU PRINCIPAL</a></li>
+            </ul>
+        </nav>
+        <h1>Registrar Clasificadores</h1>
+       
+        <form  action="clasificadores.php" method="post">
+                
+       
+                 <label>
+                NOMBRE<input name="nom" pattern="[A-Za-z]+" type="text" autofous maxlength="10">
+                </label><br>
+                 <label>
+                    APELLIDO<input name="ap" type="text" pattern="[A-Za-z]+" pattern="[A-Za-z]+" maxlength="10" autofous>
+                </label><br>
+                 <label>
+                    LUGAR DE ORIGEN<input name="lori" type="text" pattern="[A-Za-z]+" autofous maxlength="15" >
+                </label><br>
+                <label>NACIONALIDAD
+                <input name="naci" type="text" pattern="[A-Za-z]+" autofous maxlength="10">
+                </label><br>
+                <label>FECHA DE NACIMIENTO
+                <input name="fna" type="text"  autofous maxlength="10" placeholder="1963-06-01">
+                </label><br>
+                <label>FECHA DE FALLECIMIENTO
+                <input name="ffa" type="text" autofous maxlength="10" placeholder="1963-06-01">
+                </label><br>             
+             <input name='ingresar' type="submit" value="REGISTRAR">
+           
+            </form>
+            <button onclick="clasificador2();">CANCELAR</button>
+    </body>
+</html>

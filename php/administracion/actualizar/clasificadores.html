@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clasificadores</title>
+    </head>
+    <script src="../../../js/enlaces.js"></script>
+    <body>
+        
+        <nav>
+            <ul>
+            <li><a href="../../juego.html">JUEGO</a></li>
+                <li><a href="../mariposas.html">MARIPOSAS</a></li>
+                <li><a href="../../index.html">MENU PRINCIPAL</a></li>
+            </ul>
+        </nav>
+        <h1>Actualizar Clasificadores</h1>
+       
+        <form  action="procesar/clasificadores.php" method="post">
+                
+                <input type="hidden" name="id" value="">
+                 <label>
+                    NOMBRE<input name="nombre" type="text" pattern="[A-Za-z]+" autofous  maxlength="10" value="">
+                </label><br>
+                 <label>
+                    APELLIDO<input name="apellido" type="text" pattern="[A-Za-z]+" autofous required maxlength="10" value="">
+                </label><br>
+                 <label>
+                    LUGAR DE ORIGEN<input name="l_ori" type="text" pattern="[A-Za-z]+" autofous  maxlength="15" value="">
+                </label><br>
+                 <label>
+                    NACIONALIDAD<input name="nacionalidad" type="text" pattern="[A-Za-z]+" autofous required maxlength="10" value="">
+                </label><br>
+                 <label>
+                    FECHA DE NACIMIENTO<input name="f_naci" type="text" autofous  maxlength="10" value="">
+                </label><br>
+                 <label>
+                    FECHA DE MUERTE<input name="f_muer" type="text" autofous  maxlength="10" value="">
+                </label><br>
+                       
+           
+            
+ 
+            <br>
+            <input type="submit" value="ACTUALIZAR">
+            
+            </form>
+            <button onclick="clasificador2();">CANCELAR</button>
+    </body>
+</html>

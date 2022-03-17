@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<body>
+    <form id="forma">
+        <img src="img/aciertos.svg" width="50px" height="50px">Aciertos
+        <output id="aciertos"></output>
+        <img src="img/ignorancia.svg" width="50px" height="50px">Ignorancia
+        <output id="ignorancia"></output>
+    </form>
+ 
+ <div id="pregunta"></div>
+ <div id="respuesta"></div>
+     <button onclick="comprobar()">Siguiente</button>
+     <button onclick="menu()">Cancelar</button>
+</body>
+<script src="js/juego.js"></script>
+<script src="js/enlaces.js"></script>
+</html>

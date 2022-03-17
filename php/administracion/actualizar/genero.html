@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Genero</title>
+    </head>
+    <script src="../../../js/enlaces.js"></script>
+    <body>
+        
+        <nav>
+            <ul>
+            <li><a href="../../juego.html">JUEGO</a></li>
+                <li><a href="../mariposas.html">MARIPOSAS</a></li>
+                <li><a href="../../index.html">MENU PRINCIPAL</a></li>
+            </ul>
+        </nav>
+        <h1>Actualizar Genero</h1>
+       
+        <form  >
+               
+                <input type="hidden" name="id" value="">
+                 <label>
+                   CARACTERISTICA<input name="carac" pattern="[A-Za-z]+" type="text" autofous required maxlength="10" value="">
+                </label><br>
+                 <label>
+                    NOMBRE COMUN<input name="nom" pattern="[A-Za-z]+" type="text" autofous required maxlength="10" value="">
+                </label><br>
+                 <label>
+                    REGION<input name="reg" type="text" autofous required maxlength="20" value="">
+                </label><br>
+                 <label>
+                    ESPECIE TIPO<input name="esp" pattern="[A-Za-z]+" type="text" autofous required maxlength="15" value="">
+                </label><br>
+                <label>FAMILIA
+                    <select name='combo2'>
+                        
+                    </select>
+                </label><br>
+                <br>
+                <label>CLASIFICADOR
+                    <select name='combo'>
+                       
+                    </select>
+                </label>
+
+                       
+           
+            
+          
+            <input type="submit" value="ACTUALIZAR">
+            
+            </form>
+            <button onclick="genero2();">CANCELAR</button>
+    </body>
+</html>

@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Familia</title>
+    </head>
+    <script src="../../../js/enlaces.js"></script>
+    <body>
+        
+        <nav>
+            <ul>
+            <li><a href="../../juego.html">JUEGO</a></li>
+                <li><a href="../mariposas.html">MARIPOSAS</a></li>
+                <li><a href="../../index.html">MENU PRINCIPAL</a></li>
+            </ul>
+        </nav>
+        <h1>Actualizar Familia</h1>
+       
+        <form >
+                <?php
+                    foreach($query as $row){
+                ?>
+                <input type="hidden" name="id" value="">
+                 <label>
+                   HUEVO<input name="huevo" type="text" pattern="[A-Za-z]+" autofous required maxlength="15" value="">
+                </label><br>
+                 <label>
+                    LARVA<input name="larva" type="text" pattern="[A-Za-z]+" autofous required maxlength="10" value="">
+                </label><br>
+                 <label>
+                    ADULTO<input name="adulto" type="text" pattern="[A-Za-z]+" autofous required maxlength="10" value="">
+                </label><br>
+                 <label>
+                    COLOR<input name="color" type="text" pattern="[A-Za-z]+" autofous required maxlength="10" value="">
+                </label><br>
+                 <label>
+                    CUERPO<input name="cuerpo" type="text" pattern="[A-Za-z]+" autofous required maxlength="10" value="">
+                </label><br>
+                 <label>
+                    ALAS<input name="alas" type="text" pattern="[A-Za-z]+" autofous required maxlength="10" value="">
+                </label><br>
+                <label>CLASIFICADOR
+                    <select name='combo'>
+                       
+                    </select>
+                </label>
+
+                       
+           
+          
+            <br>
+            <input type="submit" value="ACTUALIZAR">
+            
+            </form>
+            <button onclick="familia2();">CANCELAR</button>
+    </body>
+</html>
